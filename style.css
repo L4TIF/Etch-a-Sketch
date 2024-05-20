@@ -13,5 +13,18 @@ body {
 .container {
   border: 2px solid black;
   height: 80vh;
-  width: 70vw;
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.container > div {
+   
+   
+    border: 1px solid hsla(0, 0%, 0%,10%);
+    border-style:dashed;
+   
+    flex:auto;
+    
 }
