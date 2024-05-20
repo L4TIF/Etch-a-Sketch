@@ -9,6 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .container {
   border: 2px solid black;
@@ -16,15 +17,15 @@ body {
   width: 40vw;
   display: flex;
   flex-wrap: wrap;
-
+}
+.grid-btn {
+  margin-bottom: 40px;
+  padding: 10px;
 }
 
 .container > div {
-   
-   
-    border: 1px solid hsla(0, 0%, 0%,10%);
-    border-style:dashed;
-   
-    flex:auto;
-    
+  border: 1px solid hsla(0, 0%, 0%, 10%);
+  border-style: dashed;
+
+  flex: auto;
 }
