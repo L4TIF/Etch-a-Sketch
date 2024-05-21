@@ -7,9 +7,8 @@ const colorPicker = document.querySelector(".color");
 
 //delete container grids for new one
 let deleteGrid = () => {
-    while (container.hasChildNodes()) {
-        container.removeChild(container.firstChild);
-    }
+
+    container.replaceChildren();
 }
 
 gridBtn.addEventListener("click", () => {
@@ -28,18 +27,11 @@ const draw = (grid) => {
         e.target.style.backgroundColor = colorPicker.value;
         target = e.target;
     })
-    // reset grid
-    resetBtn.addEventListener("click", () => {
-        target.style.backgroundColor = "white";
-    })
-
-
 }
 
 
 //how many grids?
 let createGrid = (gridCount = 16) => {
-    console.log(gridCount)
     for (let i = 0; i < gridCount * gridCount; i++) {
         const grid = document.createElement("div");
         grid.classList.add("grid");
@@ -50,3 +42,8 @@ let createGrid = (gridCount = 16) => {
     }
 }
 createGrid(); //create 16*16 grid first time
+  // reset grid
+  resetBtn.addEventListener("click", () => {
+    container.replaceChildren();
+    createGrid();
+  })
