@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   width: 100vw;
@@ -11,6 +12,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .container {
   border: 2px solid black;
   height: 80vh;
@@ -18,14 +20,27 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.grid-btn {
+
+.btn {
   margin-bottom: 40px;
   padding: 10px;
 }
 
-.container > div {
+.reset {
+  background-color: red;
+}
+
+.container>div {
   border: 1px solid hsla(0, 0%, 0%, 10%);
   border-style: dashed;
 
   flex: auto;
+}
+
+.color{
+height: 39px;
+
+}
+.btns{
+  display: flex;
 }

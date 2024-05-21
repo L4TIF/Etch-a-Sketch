@@ -7,7 +7,14 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <button class="grid-btn">Edit Grid</button>
+    <div class="btns">
+       <input type="color" name="color-picker" class="color">
+      <button class="btn grid-btn" title="going beyond 50 will cause lag">Edit Grid</button>
+      <button class="btn reset" title="clicking reset could cause lag">
+        Reset
+      </button>
+    </div>
+
     <div class="container"></div>
     <script src="app.js"></script>
   </body>
